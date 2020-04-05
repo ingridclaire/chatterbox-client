@@ -4,6 +4,8 @@ var App = {
 
   username: 'anonymous',
 
+  room: 'Lobby',
+
   initialize: function() {
     App.username = window.location.search.substr(10);
 
@@ -14,6 +16,9 @@ var App = {
     // Fetch initial batch of messages
     App.startSpinner();
     App.fetch(App.stopSpinner);
+    // $('#chats').bind('click', Friends.toggleStatus());
+    // $('#rooms button').bind('click', Rooms.add());
+    // $('form .submit').bind('click', Parse.create());
   },
 
   fetch: function(callback = () => {}){

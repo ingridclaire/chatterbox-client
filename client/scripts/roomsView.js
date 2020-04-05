@@ -7,6 +7,7 @@ var RoomsView = {
   },
 
   render: function() {
+    $('#rooms button').append(Rooms.renderTemplate(message))
   }
 
 };

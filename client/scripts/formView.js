@@ -16,9 +16,7 @@ var FormView = {
       text: FormView.$form.find('#message').val(),
     }
 
-    Parse.create(newMessage, function(){
-      alert('SUBMITTED!!!')
-    })
+    Parse.create(newMessage)
 
     console.log(newMessage)
   },

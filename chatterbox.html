@@ -30,7 +30,7 @@
         <select>
           <option value="lobby">Lobby</option>
           </select>
-        <button>Add Room</button>
+        <button onclick="addRoom()">Add Room</button>
       </div>
       <form action="#" id="send" method="post">
         <input type="text" name="message" id="message"/>
@@ -50,6 +50,9 @@
     <script src="client/scripts/app.js"></script>
     <script>
       $(() => App.initialize());
+    </script>
+    <script>var addRoom = function() {let newRoom = prompt('Enter Room Name', 'Here');
+    App.room = newRoom}
     </script>
   </body>
 </html>
